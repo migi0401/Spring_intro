@@ -45,7 +45,7 @@
   - 스프링 JdbcTemplate
   - JPA
   - 스프링 데이터 JPA
-- [ ] **AOP**
+- [x] **AOP**
   - AOP가 필요한 상황
   - AOP 적용
 
@@ -66,7 +66,16 @@
 * **컴포넌트 스캔**: `@Controller`, `@Service`, `@Repository` 애노테이션을 이용한 자동 등록.
 * **자바 코드 설정**: `@Configuration`, `@Bean`을 이용해 직접 설정 파일에 등록.
 
+### 4. 스프링 DB 접근 기술
+* **순수JDBC**: 반복적인 코드와 SQL작성하는 코드가 많음
+* **JDBC Template**: 반복 코드를 제거하지만, SQL은 직접 작성
+* **JPA**: 기본 SQL과 반복 코드도 직접 처리해줌
+* **스프링 데이터JPA**: 인터페이스만으로 기본 CRUD제공
 
+### 5. AOP
+* **AOP**: Aspect Oriented Programming
+* 공통 관심 사항과 핵심 관심 사항을 분리
+* 프록시 주입하여 사용용
 <br/>
 
 ## 커밋 컨벤션 규칙
@@ -83,7 +92,7 @@
 src
 ├── main
 │   ├── java
-│   │   └── hello.hellospring
+│   │   └── hello.hello_spring
 │   │       ├── controller  # 웹 계층 (Controller)
 │   │       ├── domain      # 도메인 객체 (Member)
 │   │       ├── repository  # DB 접근 계층 (Repository Interface/Impl)
